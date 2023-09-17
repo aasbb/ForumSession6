@@ -1,0 +1,161 @@
+#include <stdio.h>
+
+void MenuUtama()
+{
+    printf("[1] Add \n");
+    printf("[2] View \n");
+    printf("[3] Delete \n");
+    printf("[4] Update \n");
+    printf("[5] Search \n");
+    printf("[6] Quit \n");
+} // Menampilkan Menu Add, View...
+
+void Add()
+{
+    char pilihan;
+    do
+    {
+        printf("Menu Add sedang berjalan...\n");
+        printf("Ketik [0] untuk kembali ke Menu Sebelumnya\n");
+        scanf("%s", &pilihan);
+        if (pilihan != '0')
+        {
+            printf("Pilihan Tidak Valid!\n");
+        } // User diminta memasukkan inputan angka 0 untuk kembali ke Menu
+        else
+        {
+            break;
+        } // Kembali ke menu utama
+    } while (pilihan != '0');
+}
+
+void View()
+{
+    char pilihan;
+    do
+    {
+        printf("Menu View sedang berjalan...\n");
+        printf("Ketik [0] untuk kembali ke Menu Sebelumnya\n");
+        scanf("%s", &pilihan);
+        if (pilihan != '0')
+        {
+            printf("Pilihan Tidak Valid!\n");
+        }
+        else
+        {
+            break;
+        }
+    } while (pilihan != '0');
+}
+
+void Delete()
+{
+    char pilihan;
+    do
+    {
+        printf("Menu Delete sedang berjalan...\n");
+        printf("Ketik [0] untuk kembali ke Menu Sebelumnya\n");
+        scanf("%s", &pilihan);
+        if (pilihan != '0')
+        {
+            printf("Pilihan Tidak Valid!\n");
+        }
+        else
+        {
+            break;
+        }
+    } while (pilihan != '0');
+}
+
+void Update()
+{
+    char pilihan;
+    do
+    {
+        printf("Menu Update sedang berjalan...\n");
+        printf("Ketik [0] untuk kembali ke Menu Sebelumnya\n");
+        scanf("%s", &pilihan);
+        if (pilihan != '0')
+        {
+            printf("Pilihan Tidak Valid!\n");
+        }
+        else
+        {
+            break;
+        }
+    } while (pilihan != '0');
+}
+
+void Search()
+{
+    char pilihan;
+    do
+    {
+        printf("Menu Search sedang berjalan...\n");
+        printf("Ketik [0] untuk kembali ke Menu Sebelumnya\n");
+        scanf("%s", &pilihan);
+        if (pilihan != '0')
+        {
+            printf("Pilihan Tidak Valid!\n");
+        }
+        else
+        {
+            break;
+        }
+    } while (pilihan != '0');
+}
+
+void Quit()
+{
+    char pilihan;
+    do
+    {
+        printf("Menu Quit sedang berjalan...\n");
+        printf("Ketik [0] untuk kembali ke Menu Sebelumnya\n");
+        scanf("%s", &pilihan);
+        if (pilihan != '0')
+        {
+            printf("Pilihan Tidak Valid!\n");
+        }
+        else
+        {
+            break;
+        }
+    } while (pilihan != '0');
+}
+
+int main()
+{
+    char pilihan;
+    do
+    {
+        MenuUtama(); // Menampilkan Menu
+        printf("\n");
+        printf("Masukkan Pilihan : ");
+        scanf("%s", &pilihan); // User diminta memasukkan menu pilihan
+        switch (pilihan)
+        {
+        case '1':
+            Add();
+            break;
+        case '2':
+            View();
+            break;
+        case '3':
+            Delete();
+            break;
+        case '4':
+            Update();
+            break;
+        case '5':
+            Search();
+            break;
+        case '6':
+            Quit();
+            break;
+        default:
+            printf("Maaf, format nilai tidak sesuai!\n"); // Jika user salah memasukkan, maka muncul perintah ini
+        }
+    } while (pilihan != '6');
+    return 0;
+}
